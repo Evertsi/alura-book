@@ -94,8 +94,90 @@
             </div>
         </div>
     </section>
-    <footer></footer>
-
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Contêiner principal do controle deslizante -->
+        <div class="swiper">
+            <!-- Se precisarmos de paginação -->
+            <div class="swiper-pagination"></div>
+            <!-- Invólucro adicional necessário -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./IMG/Nodejs.svg" alt="Livro Nodejs"></div>
+                <div class="swiper-slide"><img src="./IMG/Portugol.svg" alt="Livro Portugol"></div>
+                <div class="swiper-slide"><img src="./IMG/Tuning.svg" alt="Livro Tuning"></div>
+                <div class="swiper-slide"><img src="./IMG/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+                <div class="swiper-slide"><img src="./IMG/Guia Front-end.svg" alt="Livro sobre Guia Front-end"></div>
+                <div class="swiper-slide"><img src="./IMG/MEAN.svg" alt="Livro MEAN"></div>
+                <div class="swiper-slide"><img src="./IMG/Gestão2.svg" alt="Livro Gestão"></div>
+            </div>
+            <!-- Se precisarmos de botões de navegação -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="card">
+            <!--1° Linha-->
+            <div class="card__descricao">
+                <!--1° Coluna-->
+                <div class="descricao">
+                    <img src="./IMG/Estrelinhas.svg" alt="Estrelinhas douradas">
+                    <h3 class="descricao__titulo">Autora do Mês</h3>
+                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                </div>
+                <!--2° Coluna-->
+                <img src="./IMG/Perfil-escritora 1.svg" alt="Imagem da escritos Juliana Agarikov" class="descricao__imagem">
+            </div>
+            <!--2° Linha-->
+            <div class="card__botoes">
+                <!--1° Coluna-->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="./IMG/Favoritos.svg" alt="Icone Favoritos"></li>
+                    <li class="botoes__item"><img src="./IMG/Compras.svg" alt="Ícone Compras"></li>
+                </ul>
+                <!--2° coluna-->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Android</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Marketing Digital</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Agile</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Startups</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">HTML & CSS</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Python</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">OO</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Java</a>
+            </li>
+        </ul>
+    </section>
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+    <hr/>
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Alura</h2>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
